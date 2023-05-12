@@ -1,0 +1,13 @@
+.container {
+  background-color: #f8f9fa; /* Light gray */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Some padding */
+}
+
+h2 {
+  color: #343a40; /* Dark gray */
+}
+
+p {
+  color: #6c757d; /* Medium gray */
+}
