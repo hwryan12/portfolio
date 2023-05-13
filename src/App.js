@@ -22,7 +22,7 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    image={project.image}
+                                    images={project.images}
                                 />
                             ))}
                         </>
@@ -35,7 +35,7 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    image={project.image}
+                                    images={project.images}
                                 />
                             ))}
                         </>
@@ -48,7 +48,7 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    image={project.image}
+                                    images={project.images}
                                 />
                             ))}
                         </>
