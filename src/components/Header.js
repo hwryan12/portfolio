@@ -16,6 +16,7 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
+                        <Nav.Link as={Link} to="/projects">All Projects</Nav.Link>
                         <Nav.Link as={Link} to="/school-projects">School Projects</Nav.Link>
                         <Nav.Link as={Link} to="/personal-projects">Personal Projects</Nav.Link>
                         <Nav.Link onClick={handleShow}>About Me</Nav.Link>

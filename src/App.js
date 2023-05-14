@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Project from './components/Body';
 import Footer from './components/Footer';
+import Welcome from './components/Welcome';  
 import projects from './projects';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
             <div className="App">
                 <Header />
                 <Routes>
-                    <Route path="/" element={
+                    <Route path="/" element={<Welcome />} /> 
+                    <Route path="/projects" element={  
                         <>
                             {projects.map((project) => (
                                 <Project 
@@ -22,7 +24,7 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    images={project.images}
+                                    images={project.images}  // pass the images array to the Project component
                                 />
                             ))}
                         </>
@@ -35,7 +37,7 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    images={project.images}
+                                    images={project.images}  // pass the images array to the Project component
                                 />
                             ))}
                         </>
@@ -48,7 +50,7 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    images={project.images}
+                                    images={project.images}  // pass the images array to the Project component
                                 />
                             ))}
                         </>
