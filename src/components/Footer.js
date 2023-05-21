@@ -1,16 +1,18 @@
 import React from 'react';
+import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
-        <footer className="footer mt-auto py-3 bg-dark text-white">
-            <div className="container d-flex justify-content-between">
-                Contact Information: <a href="mailto:harrisonwilliamryan@gmail.com" style={{color: "inherit"}}>harrisonwilliamryan@gmail.com</a>
-                <a href="https://github.com/hwryan12" target="_blank" rel="noopener noreferrer" style={{color: "inherit"}}>GitHub</a>
-                <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" target="_blank" rel="noopener noreferrer" style={{color: "inherit"}}>Linkedin</a>
+        <footer className={`${styles.footer} mt-auto py-3`}>
+            <div className={styles.container}>
+                <div>Contact Information: <a href="mailto:harrisonwilliamryan@gmail.com" className={styles['link-style']}>harrisonwilliamryan@gmail.com</a></div>
+                <div>
+                    <a href="https://github.com/hwryan12" target="_blank" rel="noopener noreferrer" className={styles['link-style']}>GitHub</a>
+                    <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" target="_blank" rel="noopener noreferrer" className={`${styles['link-style']} ml-2`}>LinkedIn</a>
+                </div>
             </div>
         </footer>
     );
 };
 
 export default Footer;
-

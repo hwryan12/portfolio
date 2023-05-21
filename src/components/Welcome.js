@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 import About from './About';
 import styles from './Welcome.module.css'; 
 
@@ -11,19 +11,19 @@ const Welcome = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <div className={styles.container}>
+        <Container fluid className={`${styles.container} text-center`}>
             <div className={styles.textContainer}>
-                <h1>Coding and design, done with love</h1>
-                <h3>Software Developer, Backend Engineer, and LEGO aficionado</h3>
+                <h1 className="display-3">Coding and design, done with love</h1>
+                <p className="lead">Software Developer, Backend Engineer, and LEGO aficionado</p>
                 <div className={styles.linksContainer}>
-                    <Button className="bg-dark text-white m-2 custom-shadow" as={Link} to="/projects">My projects</Button>
-                    <Button className="bg-dark text-white m-2 custom-shadow" onClick={handleShow}>About me</Button>
-                    <Button className="bg-dark text-white m-2 custom-shadow" as={Link} to="/projects">Thoughts</Button>
+                    <Button variant="outline-light" className="m-2 custom-shadow" as={Link} to="/projects">My projects</Button>
+                    <Button variant="outline-light" className="m-2 custom-shadow" onClick={handleShow}>About me</Button>
                 </div>
             </div>
             <About show={show} handleClose={handleClose} />
-        </div>
+        </Container>
     );
 };
 
 export default Welcome;
+

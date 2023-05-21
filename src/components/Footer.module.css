@@ -1,0 +1,21 @@
+.footer {
+  background: #000000;
+  color: #fff;
+}
+
+.link-style {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.link-style:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;  /* Adjust the padding as needed */
+}
