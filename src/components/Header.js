@@ -13,10 +13,10 @@ const Header = () => {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="p-3">
+                <Navbar.Text className={`${styles.ml3} ${styles.mr3} ${styles.boldText}`}>Harrison Ryan</Navbar.Text>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto">
-                    <Navbar.Text className={`${styles.ml3} ${styles.mr3} ${styles.boldText}`}>Harrison Ryan</Navbar.Text>
+                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                    <Nav>
                         <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
                             <NavDropdown.Item as={Link} to="/school-projects">School Projects</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/personal-projects">Personal Projects</NavDropdown.Item>
