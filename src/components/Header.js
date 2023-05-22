@@ -16,7 +16,7 @@ const Header = () => {
                 <Navbar.Text className={`${styles.ml3} ${styles.mr3} ${styles.boldText}`}>Harrison Ryan</Navbar.Text>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-                    <Nav>
+                    <Nav className={`${styles.navbarText}`}>
                         <NavDropdown title="Portfolio" id="collasible-nav-dropdown" className={styles.navbarItem}>
                             <NavDropdown.Item as={Link} to="/school-projects" className={styles.dropdownItem}>School Projects</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/personal-projects" className={styles.dropdownItem}>Personal Projects</NavDropdown.Item>

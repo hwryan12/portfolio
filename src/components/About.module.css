@@ -1,0 +1,15 @@
+.aboutModal {
+  color: #333;
+  line-height: 1.6;
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.closeButton {
+  background-color: #333;
+  color: #fff;
+}
