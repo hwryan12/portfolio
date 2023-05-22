@@ -12,16 +12,16 @@ const Header = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="p-3">
+            <Navbar collapseOnSelect expand="lg" variant="dark" className={`p-3 ${styles.blackBackground}`}>
                 <Navbar.Text className={`${styles.ml3} ${styles.mr3} ${styles.boldText}`}>Harrison Ryan</Navbar.Text>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
-                            <NavDropdown.Item as={Link} to="/school-projects">School Projects</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/personal-projects">Personal Projects</NavDropdown.Item>
+                        <NavDropdown title="Portfolio" id="collasible-nav-dropdown" className={styles.navbarItem}>
+                            <NavDropdown.Item as={Link} to="/school-projects" className={styles.dropdownItem}>School Projects</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/personal-projects" className={styles.dropdownItem}>Personal Projects</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link onClick={handleShow}>About Me</Nav.Link>
+                        <Nav.Link onClick={handleShow} className={styles.navbarItem}>About Me</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

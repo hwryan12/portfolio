@@ -7,8 +7,8 @@ const Footer = () => {
             <div className={styles.container}>
                 <div>Contact Information: <a href="mailto:harrisonwilliamryan@gmail.com" className={styles['link-style']}>harrisonwilliamryan@gmail.com</a></div>
                 <div>
-                    <a href="https://github.com/hwryan12" target="_blank" rel="noopener noreferrer" className={styles['link-style']}>GitHub</a>
-                    <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" target="_blank" rel="noopener noreferrer" className={`${styles['link-style']} ml-2`}>LinkedIn</a>
+                    <a href="https://github.com/hwryan12" target="_blank" rel="noopener noreferrer" className={`${styles['link-style']} ${styles['link-spacing']}`}>GitHub</a>
+                    <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" target="_blank" rel="noopener noreferrer" className={styles['link-style']}>LinkedIn</a>
                 </div>
             </div>
         </footer>

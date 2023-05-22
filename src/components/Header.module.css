@@ -1,4 +1,15 @@
+.blackBackground {
+  background-color: black;
+}
+
 .boldText {
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 1.5rem;
+}
+
+.navbar-item:hover {
+  color: #ff6347 !important; 
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa !important; 
 }

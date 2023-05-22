@@ -17,5 +17,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;  /* Adjust the padding as needed */
+  padding: 0 1rem; 
+}
+
+.link-spacing {
+  margin-right: 1rem;
 }
