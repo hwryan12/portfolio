@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Body.module.css'; 
 
-const Project = ({id, title, description, images}) => {
+const Project = ({id, title, description, images, languages}) => {
     const [selectedImage, setSelectedImage] = useState(images[0]);  
 
     const handleImageSelect = (image) => {
@@ -14,6 +14,7 @@ const Project = ({id, title, description, images}) => {
                 <div className="col-lg-6">
                     <h2 className={styles.h2}>{title}</h2>
                     <p className={styles.p}>{description}</p>
+                    <p className={styles.p}>Languages: {languages.join(', ')}</p>
                 </div>
                 <div className="col-lg-6">
                     <img src={selectedImage} alt={`${title} wireframe`} className="img-fluid rounded shadow" />

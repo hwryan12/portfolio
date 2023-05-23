@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Project from './components/Body';
@@ -8,24 +8,34 @@ import projects from './projects';
 import './App.css';
 
 function App() {
+    const [searchTerm, setSearchTerm] = useState(''); 
     const schoolProjects = projects.filter(project => project.type === "school");
     const personalProjects = projects.filter(project => project.type === "personal");
+    const filteredProjects = projects.filter((project) => {
+        return project.languages.some(language => language.toLowerCase().includes(searchTerm.toLowerCase()));
+    });
+
+    const handleSearch = (event) => {
+        setSearchTerm(event.target.value);
+    }
 
     return (
         <Router>
             <div className="App">
                 <Header />
+                <input type="text" className="searchInput" placeholder="Search by language..." value={searchTerm} onChange={handleSearch} />
                 <Routes>
                     <Route path="/" element={<Welcome />} /> 
                     <Route path="/projects" element={  
                         <>
-                            {projects.map((project) => (
+                            {filteredProjects.map((project) => (
                                 <Project 
                                     key={project.id} 
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    images={project.images}  // pass the images array to the Project component
+                                    images={project.images}  
+                                    languages={project.languages}
                                 />
                             ))}
                         </>
@@ -38,7 +48,8 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    images={project.images}  // pass the images array to the Project component
+                                    images={project.images}  
+                                    languages={project.languages}
                                 />
                             ))}
                         </>
@@ -51,7 +62,8 @@ function App() {
                                     id={project.id} 
                                     title={project.title} 
                                     description={project.description} 
-                                    images={project.images}  // pass the images array to the Project component
+                                    images={project.images}  
+                                    languages={project.languages}
                                 />
                             ))}
                         </>
