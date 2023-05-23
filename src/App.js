@@ -23,11 +23,11 @@ function App() {
         <Router>
             <div className="App">
                 <Header />
-                <input type="text" className="searchInput" placeholder="Search by language..." value={searchTerm} onChange={handleSearch} />
                 <Routes>
                     <Route path="/" element={<Welcome />} /> 
                     <Route path="/projects" element={  
                         <>
+                            <input type="text" className="searchInput" placeholder="Search by language..." value={searchTerm} onChange={handleSearch} />
                             {filteredProjects.map((project) => (
                                 <Project 
                                     key={project.id} 
@@ -42,6 +42,7 @@ function App() {
                     }/>
                     <Route path="/school-projects" element={
                         <>
+                            <input type="text" className="searchInput" placeholder="Search by language..." value={searchTerm} onChange={handleSearch} />
                             {schoolProjects.map((project) => (
                                 <Project 
                                     key={project.id} 
@@ -56,6 +57,7 @@ function App() {
                     }/>
                     <Route path="/personal-projects" element={
                         <>
+                            <input type="text" className="searchInput" placeholder="Search by language..." value={searchTerm} onChange={handleSearch} />
                             {personalProjects.map((project) => (
                                 <Project 
                                     key={project.id} 
