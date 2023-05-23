@@ -15,10 +15,6 @@ p {
   font-size: 1.2rem; /* Slightly larger font size */
 }
 
-body {
-  background-color: #000; /* Black */
-}
-
 .thumbnail {
   width: 100px;
   cursor: pointer;

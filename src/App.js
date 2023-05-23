@@ -5,6 +5,7 @@ import Project from './components/Body';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';  
 import projects from './projects';
+import './App.css';
 
 function App() {
     const schoolProjects = projects.filter(project => project.type === "school");
