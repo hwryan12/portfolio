@@ -1,18 +1,18 @@
 .container {
-  background-color: #d2d2d2; /* Light gray */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Some padding */
+  background-color: #d2d2d2; 
+  border-radius: 15px; 
+  padding: 20px; 
 }
 
 h2 {
-  color: #343a40; /* Dark gray */
-  font-size: 1.5rem; /* Larger font size */
-  font-weight: bold; /* Bold text */
+  color: #343a40; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
 }
 
 p {
-  color: #6c757d; /* Medium gray */
-  font-size: 1.2rem; /* Slightly larger font size */
+  color: #6c757d; 
+  font-size: 1.2rem; 
 }
 
 .thumbnail {
@@ -26,6 +26,6 @@ p {
 }
 
 .thumbnail.active {
-  border: 2px solid #007bff; /* Blue border for active thumbnail */
+  border: 2px solid #007bff; 
 }
 
